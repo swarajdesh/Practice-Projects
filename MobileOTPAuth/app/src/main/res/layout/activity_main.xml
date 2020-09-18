@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<TextView
+    android:id="@+id/tv"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:text="@string/tv"
+    android:textStyle="bold"
+    android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:layout_below="@+id/tv"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="80dp"
+        android:hint="Country Code"/>
+
+    <EditText
+        android:id="@+id/phn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/country"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="50dp"
+        android:hint="Phone number"
+        android:inputType="numberDecimal" />
+
+    <ImageView
+        android:id="@+id/btn"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/country"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/phn"
+        android:background="@drawable/button"
+        android:src="@drawable/ic_arrow_forward_black_24dp" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phn"
+        android:text="Carrier SMS charges may apply"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:id="@+id/otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv2"
+        android:layout_marginTop="30dp"
+        android:hint="OTP"/>
+
+
+
+</RelativeLayout>
